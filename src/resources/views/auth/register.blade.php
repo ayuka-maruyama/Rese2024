@@ -13,7 +13,7 @@
             <div class="container">
                 <div class="input-container">
                     <img class="img" src="{{ asset('img/user.jpg') }}" alt="user">
-                    <input class="user_input" type="text" name="Username" placeholder="Username" value="{{ old('name') }}">
+                    <input class="user_input" type="text" name="name" placeholder="Username" value="{{ old('name') }}">
                 </div>
                 <div class="error">
                     @error('name')
@@ -24,10 +24,10 @@
             <div class="container">
                 <div class="input-container">
                     <img class="img" src="{{ asset('img/mail.jpg') }}" alt="mail">
-                    <input class="mail_input" type="email" name="email" placeholder="Email" value="{{ old('mail') }}">
+                    <input class="mail_input" type="email" name="email" placeholder="Email" value="{{ old('email') }}">
                 </div>
                 <div class="error">
-                    @error('name')
+                    @error('email')
                     <P>{{ $message }}</P>
                     @enderror
                 </div>
@@ -38,7 +38,7 @@
                     <input class="password_input" type="password" name="password" placeholder="Password" value="{{ old('password') }}">
                 </div>
                 <div class="error">
-                    @error('name')
+                    @error('password')
                     <P>{{ $message }}</P>
                     @enderror
                 </div>
